@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            CSS Paint API Demo
+        </title>
+    </head>
+    <style>
+        textarea{
+            background-image:paint(checker-board-painter);
+        }
+    </style>
+    <body>
+        <textarea></textarea>
+
+        <script>
+            CSS.paintWorklet.addModule('/js/checker-board-painter.js')
+        </script>
+    </body>
+</html>
