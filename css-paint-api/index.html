@@ -7,14 +7,16 @@
     </head>
     <style>
         textarea{
-            background-image:paint(checker-board-painter);
+            background-image:paint(chess-board-painter);
+            width: 200px;
+            height: 200px;
         }
     </style>
     <body>
         <textarea></textarea>
 
         <script>
-            CSS.paintWorklet.addModule('/js/checker-board-painter.js')
+            CSS.paintWorklet.addModule('/js/chess-board-painter.js')
         </script>
     </body>
 </html>
