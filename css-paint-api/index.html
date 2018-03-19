@@ -18,7 +18,11 @@
         <textarea></textarea>
 
         <script>
-            CSS.paintWorklet.addModule('/js/chess-board-painter.js')
+            if ('paintWorklet' in CSS){
+                CSS.paintWorklet.addModule('/js/chess-board-painter.js');
+            }else{
+                alert('Your browser does not support CSS Paint API');
+            } 
         </script>
     </body>
 </html>
